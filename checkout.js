@@ -180,7 +180,7 @@ $(document).on(`page:load page:change`, function() {
               }, 3000);
           }
       }
-      ).catch(()=>{
+      ).fail(()=>{
           $(".commander-input")[0].value = basecode;
           $(".commander-btn").click();
           console.log("discount api")
