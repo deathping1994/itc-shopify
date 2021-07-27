@@ -26,7 +26,7 @@ $(document).on(`page:load page:change`, function() {
         var basecode = $("#checkout_reduction_code")[0].value;
         $.ajax({
             type: "POST",
-            url: "https://itc-stage.farziengineer.co/discount",
+            url: "https://itc-api.farziengineer.co/discount",
             headers: {
                 "Content-Type": "application/json"
             },
@@ -37,7 +37,7 @@ $(document).on(`page:load page:change`, function() {
                 $(".commander-btn").click();
                 setTimeout(function() {
                     var couponlog_postrequest = {
-                        url: "https://itc-stage.farziengineer.co/couponlog",
+                        url: "https://itc-api.farziengineer.co/couponlog",
                         method: "POST",
                         timeout: 0,
                         headers: {
@@ -82,7 +82,7 @@ $(document).on(`page:load page:change`, function() {
             $(".commander-btn").click();
             setTimeout(function() {
                 var couponlog_postrequest = {
-                    url: "https://itc-stage.farziengineer.co/couponlog",
+                    url: "https://itc-api.farziengineer.co/couponlog",
                     method: "POST",
                     timeout: 0,
                     headers: {
@@ -128,7 +128,7 @@ $(document).on(`page:load page:change`, function() {
         var basecode = $("#checkout_reduction_code_mobile")[0].value;
         $.ajax({
             type: "POST",
-            url: "https://itc-stage.farziengineer.co/discount",
+            url: "https://itc-api.farziengineer.co/discount",
             headers: {
                 "Content-Type": "application/json"
             },
@@ -139,7 +139,7 @@ $(document).on(`page:load page:change`, function() {
                 $(".commander-btn").click();
                 setTimeout(function() {
                     var couponlog_postrequest = {
-                        url: "https://itc-stage.farziengineer.co/couponlog",
+                        url: "https://itc-api.farziengineer.co/couponlog",
                         method: "POST",
                         timeout: 0,
                         headers: {
@@ -184,7 +184,7 @@ $(document).on(`page:load page:change`, function() {
             $(".commander-btn").click();
             setTimeout(function() {
                 var couponlog_postrequest = {
-                    url: "https://itc-stage.farziengineer.co/couponlog",
+                    url: "https://itc-api.farziengineer.co/couponlog",
                     method: "POST",
                     timeout: 0,
                     headers: {
