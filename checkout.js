@@ -17,10 +17,9 @@ $(document).on(`page:load page:change`, function() {
     $('.commander-input')[0].style.display = "none";
     $('.commander-btn')[0].style.display = "none";
     var token = '';
-    $.get('/cart.js').then(response=>{
-        token = $.parseJSON(response).token
-    }
-    )
+    $.getJSON('/cart.js', function(cart) {
+       token = cart.token;
+    } );
     $(".order-summary__section--discount .field__input-btn").on("click touchstart", function(event) {
         event.preventDefault();
         var basecode = $("#checkout_reduction_code")[0].value;
