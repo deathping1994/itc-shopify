@@ -29,7 +29,7 @@ $(document).on(`page:load page:change`, function() {
             headers: {
                 "Content-Type": "application/json"
             },
-            data: `{"code":"${basecode}", "cartId":"${token}"}`,
+            data: `{"code":"${basecode}", "cartId":"${token}", "client":"ITC"}`,
         }).then((response)=>{
             if (response == "true" || response == "True") {
                 $(".commander-input")[0].value = basecode;
@@ -131,7 +131,7 @@ $(document).on(`page:load page:change`, function() {
             headers: {
                 "Content-Type": "application/json"
             },
-            data: `{"code":"${basecode}", "cartId":"${token}"}`,
+            data: `{"code":"${basecode}", "cartId":"${token}", "client":"ITC"}`,
         }).then((response)=>{
             if (response == "true" || response == "True") {
                 $(".commander-input")[0].value = basecode;
